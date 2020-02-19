@@ -1,20 +1,33 @@
-import numpy as numpy
+import numpy as np
 import cv2
 
 
-cap = cv2.VideoCapture(0)
-
-while(True):
-    ret, frame = cap.read()
-
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
-    cv2.imshow('Video frame',gray)
-    if(cv2.waitKey(1) & 0xFF == ord('q')):
-        break
-
-cap.release()
-cv2.destroyAllWindows()
+def ex1():
+    vec = np.zeros(10)
+    print(vec)
 
 
+def ex2():
+    vec = np.zeros(10)
+    vec[4] = 1
+    print(vec) 
+
+def ex3():
+    vec = np.arange(10,50)
+    print(vec)
+
+
+
+def ex4():
+    arr = np.arange(0.0, 9.0) 
+    arr = arr.reshape((3, 3))
+    print(arr)
+
+def ex5():
+    arr = np.arange(0.0, 9.0) 
+    arr = arr.reshape((3, 3))
+    arr = np.fliplr(arr)
+    print(arr)
+
+ex5()
 
