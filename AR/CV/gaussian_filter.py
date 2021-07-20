@@ -3,6 +3,7 @@ import cv2
 
 def gaussianKernel(krad):
 
+    
 
     #kernel
     ksize = (2 * krad) + 1
